@@ -1,0 +1,522 @@
+:root {
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8;
+  margin: 0;
+  background-color: #fff;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  outline: none !important;
+}
+
+.drink-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+
+  & img {
+    max-width: 120px;
+  }
+}
+
+.drink-btn {
+  background-color: #000;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  & a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  & a:hover {
+    text-decoration: none;
+  }
+}
+
+.drink-btn:hover {
+  background-color: #d69f1e;
+}
+
+/*===============================================================
+Header
+===============================================================*/
+#drink-header {
+  padding: 0;
+
+  .drink-banner {
+    background-image: url("../img/thumbs/home-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    height: 100vh;
+
+    .drink-banner__navbar {
+      background-color: rgba(255, 255, 255, 0.2);
+      max-height: 40px;
+      padding: 0 100px;
+
+      .drink-banner__link {
+        color: #fffafa;
+      }
+
+      .drink-banner__link:hover {
+        color: #d69f1e;
+        text-decoration: underline;
+      }
+
+      .drink-banner__form {
+        .drink-banner__input {
+          color: #fffafa;
+          font-size: 14px;
+          max-height: 25px;
+          background-color: transparent;
+          border: none;
+          border-left: 1px solid #fff;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+        }
+
+        .drink-banner__input:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        .drink-banner__search-button {
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .drink-banner__search-button:hover,
+        .drink-banner__search-button:focus {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .drink-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    height: 100px;
+
+    .drink-navbar-main {
+      width: 100%;
+      justify-content: space-around;
+      padding: 0;
+
+      .drink-navbar__brand {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .drink-navbar__image {
+          height: 100px;
+          width: auto;
+        }
+      }
+
+      .drink-navbar__collapse {
+        flex-grow: unset;
+
+        .drink-navbar__item {
+          margin-left: 20px;
+
+          .drink-navbar__link {
+            color: #fffafa;
+            text-transform: capitalize;
+          }
+
+          .active {
+            color: #d69f1e;
+          }
+
+          .drink-navbar__link:hover {
+            color: #d69f1e;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*===============================================================
+Information
+===============================================================*/
+.drink-body {
+  position: relative;
+
+  .drink-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 25%;
+    z-index: -1;
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .drink-info-section {
+    padding-top: 70px;
+    max-width: 768px;
+
+    .drink-info-main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      & p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/*===============================================================
+Best product
+===============================================================*/
+.drink-best-section {
+  margin-top: 100px;
+  position: relative;
+
+  .drink-best-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      z-index: -1;
+    }
+
+    .drink-best {
+      position: absolute;
+      transform: translateY(50%);
+      max-width: 900px;
+      background-color: #fff;
+      -webkit-transform: translateY(50%);
+      -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      -o-transform: translateY(50%);
+
+      .drink-best__item {
+        padding: 80px 40px;
+      }
+    }
+  }
+}
+
+/*===============================================================
+Product Item
+===============================================================*/
+
+.product-thumbnail {
+  position: relative;
+
+  .product-tag {
+    position: absolute;
+    top: -10px;
+    left: -45px;
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #d69f1e;
+    rotate: -45deg;
+    font-size: 20px;
+    text-transform: capitalize;
+
+    & span {
+      position: absolute;
+      top: 25px;
+      left: -20px;
+    }
+  }
+
+  .product-tag--sale {
+    border-bottom-color: #d69f1e;
+    color: #fff;
+  }
+
+  .product-tag--new {
+    border-bottom-color: #8bc34a;
+    color: #fff;
+  }
+
+  .product-tag--hot {
+    border-bottom-color: #ff0000;
+    color: #fff;
+  }
+
+  .product-tag--small {
+    top: -5px;
+    left: -10px;
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-bottom-width: 50px;
+
+    & span {
+      top: 15px;
+    }
+  }
+}
+
+.product-info {
+  padding: 0px;
+
+  .product-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: #000;
+
+    & img {
+      max-width: 50px;
+      margin-top: 5px;
+    }
+  }
+
+  .product-title:hover {
+    color: #d69f1e;
+    text-decoration: none;
+  }
+
+  .product-price {
+    font-size: 24px;
+    color: #d69f1e;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+
+    & span {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+
+  .product-desc {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #9ba6a5;
+  }
+
+  .product-title--left {
+    align-items: flex-start;
+  }
+
+  .product-title--new-size {
+    font-size: 14px;
+  }
+}
+
+.product-info--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .drink-btn {
+    width: 150px;
+  }
+}
+
+.product-sale {
+  margin-top: 50px;
+  text-align: center;
+
+  .product-sale__row {
+    .product-row__item {
+      display: inline-block;
+      width: 50%;
+      border: 1px solid #d69f1e;
+      text-align: center;
+
+      .product-row__time {
+        font-size: 24px;
+        height: 80px;
+        color: #d69f1e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & span {
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .product-row__item:last-child {
+      margin-left: -5px;
+      border-left: none;
+    }
+  }
+
+  .product-sale__row:first-child {
+    .product-row__item {
+      border-bottom: none;
+    }
+  }
+}
+
+/*===============================================================
+New Item Section
+===============================================================*/
+.drink-new-section {
+  margin-top: 400px;
+
+  .drink-new__carousel {
+    padding: 30px;
+  }
+}
+
+/*===============================================================
+Good Item Section
+===============================================================*/
+.drink-good-section {
+  margin-top: 100px;
+
+  .drink-good__carousel {
+    padding: 30px;
+  }
+}
+
+/*===============================================================
+Wallpaper Section
+===============================================================*/
+.drink-wallpaper-section {
+  margin: 100px 0;
+  padding: 0;
+
+  .drink-wallpaper {
+    margin-top: 50px;
+
+    .wallpaper__row {
+      .wallpaper-row__item {
+        display: inline-block;
+        width: 25%;
+        height: 300px;
+
+        & img {
+          width: calc(100% + 1px);
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .wallpaper-row__item:not(:first-child) {
+        margin-left: -5px;
+        border-left: none;
+      }
+    }
+
+    .wallpaper__row:last-child {
+      .wallpaper-row__item {
+        margin-top: -10px;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+/*===============================================================
+Footer
+===============================================================*/
+#drink-footer {
+  .footer-main {
+    margin-top: 100px;
+    padding: 20px 50px;
+
+    .footer-row {
+      .footer-item {
+        .footer-title {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+        .footer-list {
+          text-transform: uppercase;
+          font-size: 12px;
+          .footer-list__item {
+            color: #9ba6a5;
+            margin-top: 5px;
+            & a {
+              text-decoration: none;
+              color: #9ba6a5;
+            }
+
+            & a:hover {
+              color: #5f6769;
+            }
+
+            & img {
+              width: 10px;
+              height: auto;
+            }
+          }
+        }
+        .footer-desc {
+          margin-top: -5px;
+          font-size: 14px;
+          color: #9ba6a5;
+        }
+      }
+    }
+  }
+  .footer-sub {
+    border-top: 1px solid #9ba6a5;
+
+    .footer-row {
+      padding: 10px 30px;
+
+      .footer-desc {
+        margin-top: -5px;
+        font-size: 14px;
+        color: #9ba6a5;
+      }
+    }
+  }
+}
