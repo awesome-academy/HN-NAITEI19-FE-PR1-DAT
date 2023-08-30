@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/thumbs/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/introduce.css" />
+    <title>Drink</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <header id="drink-header" class="container-fluid">
+    <div class="drink-banner drink-banner--no-bg">
+      <nav class="drink-banner__navbar navbar navbar-expand-lg">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#drink-banner__collapse"
+          aria-controls="drink-banner__collapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="drink-banner__collapse collapse navbar-collapse container"
+          id="drink-banner__collapse"
+        >
+          <ul class="drink-banner__list navbar-nav mr-auto">
+            <li class="drink-banner__item nav-item">
+              <a class="drink-banner__link nav-link" href="#"
+                >Tài khoản của tôi</a
+              >
+            </li>
+            <li class="drink-banner__item nav-item">
+              <a class="drink-banner__link nav-link" href="#"
+                >Trạng thái đơn hàng</a
+              >
+            </li>
+            <li class="drink-banner__item nav-item">
+              <a class="drink-banner__link nav-link" href="#"
+                >Danh sách ưu thích</a
+              >
+            </li>
+            <li class="drink-banner__item nav-item">
+              <a class="drink-banner__link nav-link" href="cart.html">Giỏ hàng</a>
+            </li>
+            <li class="drink-banner__item nav-item">
+              <a class="drink-banner__link nav-link" href="#">Đăng nhập</a>
+            </li>
+            <li class="drink-banner__item nav-item">
+              <a class="drink-banner__link nav-link" href="#">Đăng ký</a>
+            </li>
+          </ul>
+          <form class="drink-banner__form form-inline my-2 my-lg-0">
+            <input
+              class="drink-banner__input form-control mr-sm-2"
+              type="search"
+              placeholder="Tìm kiếm ở đây"
+              aria-label="Search"
+            />
+            <button
+              class="drink-banner__search-button btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+            >
+              <img src="./img/icon/search-black.svg" alt="search-icon" />
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="drink-navbar">
+      <nav class="drink-navbar-main navbar navbar-expand-lg container">
+        <a class="drink-navbar__brand navbar-brand" href="index.html"
+          ><img
+            src="./img/thumbs/home-brand.jpg"
+            alt="drink logo"
+            class="drink-navbar__image"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#drink-navbar__collapse"
+          aria-controls="drink-navbar__collapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="drink-navbar__collapse collapse navbar-collapse"
+          id="drink-navbar__collapse"
+        >
+          <ul class="drink-navbar__list navbar-nav mr-auto">
+            <li class="drink-navbar__item nav-item">
+              <a class="drink-navbar__link nav-link" href="index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="drink-navbar__item nav-item">
+              <a class="drink-navbar__link nav-link" href="products.html">Rượu vang đỏ</a>
+            </li>
+            <li class="drink-navbar__item nav-item">
+              <a class="drink-navbar__link nav-link" href="#">Rượu trắng</a>
+            </li>
+            <li class="drink-navbar__item nav-item">
+              <a class="drink-navbar__link nav-link" href="#">Champagne</a>
+            </li>
+            <li class="drink-navbar__item nav-item">
+              <a
+                class="drink-navbar__link nav-link active"
+                href="introduce.html"
+                >Thông tin</a
+              >
+            </li>
+            <li class="drink-navbar__item nav-item">
+              <a class="drink-navbar__link nav-link" href="blogs.html">Blog</a>
+            </li>
+            <li class="drink-navbar__item nav-item">
+              <a class="drink-navbar__link nav-link" href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <body>
+    <div class="drink-body drink-introduce-body container">
+      <div class="drink-breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Giới thiệu
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="product-info">
+        <p class="product-title product-title--left">
+          Giới thiệu
+          <img src="./img/thumbs/titleleft-dark.png" alt="title left dark" />
+        </p>
+      </div>
+      <div class="drink-introduce row">
+        <div class="drink-introduce__thumb col-12 col-md-5">
+          <img src="./img/thumbs/grape-green.jpg" alt="grape image" />
+        </div>
+        <div class="drink-introduce__desc col-12 col-md-7">
+          <h2 class="drink-title">Chào mừng đến với wine hourse</h2>
+          <p class="drink-desc">
+            Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự
+            nhiên từ hoa quả có độ rượu nhẹ, bọt ga đầy trắng mịn. Vang nổ Thăng
+            Long tạo cảm giác hưng phấn, êm dịu, vui tươi, sản phẩm được đóng
+            chai dung tích 750ml. Vang nổ Thăng Long có hương vị đặc trưng của
+            sản phẩm lên men tự nhiên từ hoa quả có độ rượu nhẹ, bọt ga đầy
+            trắng mịn. Vang nổ Thăng Long tạo cảm giác hưng phấn, êm dịu, vui
+            tươi, sản phẩm được đóng chai dung tích 750ml. Vang nổ Thăng Long có
+            hương vị đặc trưng của sản phẩm lên men tự nhiên từ hoa quả có độ
+            rượu nhẹ, bọt ga đầy trắng mịn. Vang nổ Thăng Long tạo cảm giác hưng
+            phấn, êm dịu, vui tươi, sản phẩm được đóng chai dung tích 750ml.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer id="drink-footer">
+    <div class="footer-main container">
+      <div class="footer-row row">
+        <div class="footer-item col-md-2">
+          <h2 class="footer-title">Thông tin</h2>
+          <ul class="footer-list">
+            <li class="footer-list__item"><a href="#">Về chúng tôi</a></li>
+            <li class="footer-list__item"><a href="#">Giao hàng </a></li>
+            <li class="footer-list__item"><a href="#">Cảm nghĩ</a></li>
+            <li class="footer-list__item"><a href="#">Lưu trữ </a></li>
+            <li class="footer-list__item">
+              <a href="#">Chính sách riêng tư </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item col-md-2">
+          <h2 class="footer-title">Mua hàng</h2>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#">Vận chuyển trả hàng </a>
+            </li>
+            <li class="footer-list__item"><a href="#">Mua hàng an toàn</a></li>
+            <li class="footer-list__item"><a href="#">Vận quốc tế </a></li>
+            <li class="footer-list__item"><a href="#">Liên kết </a></li>
+            <li class="footer-list__item">
+              <a href="#">Dịch vụ giảm giá </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item col-md-4">
+          <h2 class="footer-title">Gửi email</h2>
+          <p class="footer-desc">Gửi email cho chúng tôi để được hỗ trợ</p>
+        </div>
+        <div class="footer-item col-md-4">
+          <h2 class="footer-title">Liên hệ</h2>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <img
+                src="./img/icon/location-dot-solid.svg"
+                alt="locate icon"
+              />
+              Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn P.Cống Vị, Q.Ba Đình,
+              Hà Nội
+            </li>
+            <li class="footer-list__item">
+              <img src="./img/icon/phone-solid.svg" alt="locate icon" />
+              (04) 6674 2332 -
+              <img src="./img/icon/phone-solid.svg" alt="locate icon" /> (04)
+              3786 8904
+            </li>
+            <li class="footer-list__item">
+              <img src="./img/icon/phone-solid.svg" alt="locate icon" />
+              (08) 6680 9686
+              <img src="./img/icon/envelope-solid.svg" alt="locate icon" />
+              Support@bizweb.vn
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-sub container-fluid">
+      <div class="footer-row container">
+        <div class="footer-item col-md-8">
+          <p class="footer-desc">@ Copyright 2008-2014 DKT Technology JSC</p>
+        </div>
+        <div class="footer-item col-md-4"></div>
+      </div>
+    </div>
+  </footer>
+</html>

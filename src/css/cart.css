@@ -1,0 +1,41 @@
+/*===============================================================
+Cart
+===============================================================*/
+.drink-cart {
+  .drink-cart__table {
+    background-color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    .drink-table__image {
+      height: 100px;
+
+      & img {
+        object-fit: contain;
+        max-height: 100%;
+        width: auto;
+      }
+    }
+
+    .drink-table__price,
+    .drink-table__total {
+      color: #d69f1e;
+      position: relative;
+
+      & span {
+        position: absolute;
+        text-transform: none;
+        top: 2px;
+        font-size: 10px;
+      }
+    }
+
+    .drink-table__icon {
+      & img {
+        width: 18px ;
+        height: auto;
+      }
+    }
+  }
+}

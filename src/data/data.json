@@ -1,0 +1,170 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Rượu vang Pháp",
+      "category": "vang",
+      "images": [
+        "./img/products/1.jpg",
+        "./img/products/2.jpg",
+        "./img/products/3.jpg",
+        "./img/products/4.jpg",
+        "./img/products/5.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 2,
+      "name": "Rượu vang Mỹ",
+      "category": "vang",
+      "images": [
+        "./img/products/2.jpg",
+        "./img/products/3.jpg",
+        "./img/products/4.jpg",
+        "./img/products/5.jpg",
+        "./img/products/6.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 3,
+      "name": "Rượu vang đà lạt",
+      "category": "vang",
+      "images": [
+        "./img/products/3.jpg",
+        "./img/products/4.jpg",
+        "./img/products/5.jpg",
+        "./img/products/6.jpg",
+        "./img/products/7.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 4,
+      "name": "Rượu vang đà lạt",
+      "category": "vang",
+      "images": [
+        "./img/products/4.jpg",
+        "./img/products/5.jpg",
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 5,
+      "name": "Rượu vang đà lạt",
+      "category": "vang",
+      "images": [
+        "./img/products/5.jpg",
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg",
+        "./img/products/9.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 6,
+      "name": "Chivas đà lạt",
+      "category": "chivas",
+      "images": [
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg",
+        "./img/products/9.jpg",
+        "./img/products/10.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 4,
+      "name": "Rượu vang đà lạt",
+      "category": "vang",
+      "images": [
+        "./img/products/4.jpg",
+        "./img/products/5.jpg",
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 5,
+      "name": "Rượu vang đà lạt",
+      "category": "vang",
+      "images": [
+        "./img/products/5.jpg",
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg",
+        "./img/products/9.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 6,
+      "name": "Chivas đà lạt",
+      "category": "chivas",
+      "images": [
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg",
+        "./img/products/9.jpg",
+        "./img/products/10.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 7,
+      "name": "Whisky",
+      "category": "whisky",
+      "images": [
+        "./img/products/4.jpg",
+        "./img/products/5.jpg",
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 8,
+      "name": "Whisky",
+      "category": "whisky",
+      "images": [
+        "./img/products/5.jpg",
+        "./img/products/6.jpg",
+        "./img/products/7.jpg",
+        "./img/products/8.jpg",
+        "./img/products/9.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    },
+    {
+      "id": 9,
+      "name": "Chivas đà lạt",
+      "category": "chivas",
+      "images": [
+        "./img/products/11.jpg",
+        "./img/products/12.jpg",
+        "./img/products/13.jpg",
+        "./img/products/14.jpg",
+        "./img/products/10.jpg"
+      ],
+      "prices": ["370.000", "450.000"]
+    }
+  ],
+  "carts": [
+    {
+      "id": 1,
+      "image": "",
+      "name": "",
+      "price": "",
+      "quantity": "",
+      "total": ""
+    }
+  ]
+}
