@@ -19,7 +19,6 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/cart.css" />
     <title>Drink</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -159,40 +158,10 @@
     </div>
   </header>
   <body>
-    <div class="drink-body container">
-      <div class="drink-breadcrumb">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-            <li class="breadcrumb-item">Sản phẩm</li>
-            <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="product-info">
-        <p class="product-title product-title--left">
-          Giỏ hàng
-          <img src="./img/thumbs/titleleft-dark.png" alt="title left dark" />
-        </p>
-      </div>
-
-      <div class="drink-cart">
-        <table class="drink-cart__table table table-bordered">
-          <thead>
-            <tr>
-              <th scope="col">Ảnh</th>
-              <th scope="col">Tên sản phẩm</th>
-              <th scope="col">Giá</th>
-              <th scope="col">Số lượng</th>
-              <th scope="col">Tổng số</th>
-              <th scope="col">Xóa</th>
-            </tr>
-          </thead>
-          <tbody id="drink-table__body"></tbody>
-        </table>
-        <div class="drink-btn">
-          <a href="confirm.html">Thanh toán</a>
-        </div>
+    <div class="drink-body drink-done container">
+      <h2>Đặt hàng thành công</h2>
+      <div class="drink-btn">
+        <a href="index.html">Quay lại trang chủ</a>
       </div>
     </div>
   </body>
@@ -263,6 +232,4 @@
       </div>
     </div>
   </footer>
-
-  <script src="./javascript/cart.js"></script>
 </html>

@@ -19,7 +19,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/confirm.css" />
     <title>Drink</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -165,33 +165,133 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
             <li class="breadcrumb-item">Sản phẩm</li>
-            <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+            <li class="breadcrumb-item">
+              <a href="cart.html"> Giỏ hàng</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Thanh toán
+            </li>
           </ol>
         </nav>
       </div>
       <div class="product-info">
         <p class="product-title product-title--left">
-          Giỏ hàng
+          Thanh toán
           <img src="./img/thumbs/titleleft-dark.png" alt="title left dark" />
         </p>
       </div>
-
-      <div class="drink-cart">
-        <table class="drink-cart__table table table-bordered">
-          <thead>
-            <tr>
-              <th scope="col">Ảnh</th>
-              <th scope="col">Tên sản phẩm</th>
-              <th scope="col">Giá</th>
-              <th scope="col">Số lượng</th>
-              <th scope="col">Tổng số</th>
-              <th scope="col">Xóa</th>
-            </tr>
-          </thead>
-          <tbody id="drink-table__body"></tbody>
-        </table>
-        <div class="drink-btn">
-          <a href="confirm.html">Thanh toán</a>
+      <div class="drink-confirm">
+        <h2 class="drink-confirm__title">Thông tin của bạn</h2>
+        <div class="drink-confirm__form">
+          <form>
+            <input
+              type="text"
+              class="form-control"
+              id="confirm-id"
+              style="display: none"
+            />
+            <div class="form-group row">
+              <label for="confirm-name" class="col-sm-2 col-form-label"
+                >Tên</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="confirm-name"
+                  aria-describedby="name"
+                  placeholder="Nhập tên của bạn"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="confirm-subname" class="col-sm-2 col-form-label"
+                >Họ và tên đệm</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="confirm-subname"
+                  aria-describedby="subname"
+                  placeholder="Nhập họ và tên đệm của bạn"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="confirm-company" class="col-sm-2 col-form-label"
+                >Công ty</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="confirm-company"
+                  aria-describedby="company"
+                  placeholder="Nhập công ty của bạn"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="confirm-address" class="col-sm-2 col-form-label"
+                >Địa chỉ</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="confirm-address"
+                  aria-describedby="address"
+                  placeholder="Nhập địa chỉ của bạn"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="confirm-nation" class="col-sm-2 col-form-label"
+                >Quốc tịch</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="confirm-nation"
+                  aria-describedby="nation"
+                  placeholder="Nhập quốc tịch của bạn"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="confirm-zip" class="col-sm-2 col-form-label"
+                >Zip Code</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="confirm-zip"
+                  aria-describedby="zip"
+                  placeholder="Nhập zip code của bạn"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="confirm-phone" class="col-sm-2 col-form-label"
+                >Điện thoại</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="confirm-phone"
+                  aria-describedby="phone"
+                  placeholder="Nhập điện thoại của bạn"
+                />
+              </div>
+            </div>
+            <div class="drink-btn">
+              <a href="done.html" id="confirm-btn">Xác nhận</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -264,5 +364,5 @@
     </div>
   </footer>
 
-  <script src="./javascript/cart.js"></script>
+  <script src="./javascript/confirm.js"></script>
 </html>
