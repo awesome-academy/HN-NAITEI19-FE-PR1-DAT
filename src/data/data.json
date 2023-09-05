@@ -166,5 +166,131 @@
       "quantity": "",
       "total": ""
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Đạt",
+      "subname": "Nguyễn Tiến",
+      "company": "Sun",
+      "address": "1 Đại Cồ Việt",
+      "nation": "Việt Nam",
+      "zip": "10000",
+      "phone": "0123456789"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "user": {
+        "id": 1,
+        "name": "Đạt",
+        "subname": "Nguyễn Tiến",
+        "company": "Sun",
+        "address": "1 Đại Cồ Việt",
+        "nation": "Việt Nam",
+        "zip": "10000",
+        "phone": "0123456789"
+      },
+      "cart": [
+        {
+          "productId": 1,
+          "name": "Rượu vang Mỹ",
+          "price": 370000,
+          "quantity": 1,
+          "total": 370000
+        }
+      ]
+    },
+    {
+      "user": {
+        "name": "Đạt",
+        "subname": "Nguyễn Tiến",
+        "company": "Sun",
+        "address": "1 Đại Cồ Việt",
+        "nation": "Việt Nam",
+        "zip": "10000",
+        "phone": "0123456789"
+      },
+      "cart": [
+        {
+          "productId": 2,
+          "name": "Rượu vang Mỹ",
+          "image": "./img/products/2.jpg",
+          "price": 370000,
+          "quantity": 5,
+          "total": 1850000
+        }
+      ],
+      "id": 2
+    },
+    {
+      "user": {
+        "name": "Đạt",
+        "subname": "Nguyễn Tiến",
+        "company": "Sun",
+        "address": "1 Đại Cồ Việt",
+        "nation": "Việt Nam",
+        "zip": "10000",
+        "phone": "0123456789"
+      },
+      "cart": [
+        {
+          "productId": 2,
+          "name": "Rượu vang Mỹ",
+          "image": "./img/products/2.jpg",
+          "price": 370000,
+          "quantity": 5,
+          "total": 1850000
+        }
+      ],
+      "id": 3
+    },
+    {
+      "user": {
+        "id": "1",
+        "name": "Đạt",
+        "subname": "Nguyễn Tiến",
+        "company": "Sun",
+        "address": "1 Đại Cồ Việt",
+        "nation": "Việt Nam",
+        "zip": "10000",
+        "phone": "0123456789"
+      },
+      "cart": [
+        {
+          "productId": 2,
+          "name": "Rượu vang Mỹ",
+          "image": "./img/products/2.jpg",
+          "price": 370000,
+          "quantity": 5,
+          "total": 1850000
+        }
+      ],
+      "id": 4
+    },
+    {
+      "user": {
+        "id": "1",
+        "name": "Đạt",
+        "subname": "Nguyễn Tiến",
+        "company": "Sun",
+        "address": "1 Đại Cồ Việt",
+        "nation": "Việt Nam",
+        "zip": "10000",
+        "phone": "0123456789"
+      },
+      "cart": [
+        {
+          "productId": 2,
+          "name": "Rượu vang Mỹ",
+          "image": "./img/products/2.jpg",
+          "price": 370000,
+          "quantity": 5,
+          "total": 1850000
+        }
+      ],
+      "id": 5
+    }
   ]
 }

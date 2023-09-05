@@ -1,0 +1,16 @@
+/*===============================================================
+Confirm
+===============================================================*/
+.drink-confirm {
+  max-width: 70%;
+
+  .drink-confirm__title {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .drink-btn {
+    margin: 20px auto;
+  }
+}
