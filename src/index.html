@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="src/img/thumbs/logo.png" />
+    <link rel="icon" href="./img/thumbs/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -17,8 +17,8 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/css/reset.css" />
-    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Drink</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -35,7 +35,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <header id="drink-header" class="container-fluid">
     <div class="drink-banner">
@@ -73,7 +72,9 @@
               >
             </li>
             <li class="drink-banner__item nav-item">
-              <a class="drink-banner__link nav-link" href="#">Giỏ hàng</a>
+              <a class="drink-banner__link nav-link" href="cart.html"
+                >Giỏ hàng</a
+              >
             </li>
             <li class="drink-banner__item nav-item">
               <a class="drink-banner__link nav-link" href="#">Đăng nhập</a>
@@ -93,7 +94,7 @@
               class="drink-banner__search-button btn btn-outline-success my-2 my-sm-0"
               type="submit"
             >
-              <img src="src/img/icon/search.svg" alt="search-icon" />
+              <img src="./img/icon/search.svg" alt="search-icon" />
             </button>
           </form>
         </div>
@@ -101,9 +102,9 @@
     </div>
     <div class="drink-navbar">
       <nav class="drink-navbar-main navbar navbar-expand-lg container">
-        <a class="drink-navbar__brand navbar-brand" href="/index.html"
+        <a class="drink-navbar__brand navbar-brand" href="index.html"
           ><img
-            src="src/img/thumbs/home-brand.jpg"
+            src="./img/thumbs/home-brand.jpg"
             alt="drink logo"
             class="drink-navbar__image"
         /></a>
@@ -125,24 +126,30 @@
         >
           <ul class="drink-navbar__list navbar-nav mr-auto">
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link active" href="/index.html"
+              <a class="drink-navbar__link nav-link active" href="index.html"
                 >Trang chủ</a
               >
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="#">Rượu vang đỏ</a>
+              <a class="drink-navbar__link nav-link" href="products.html"
+                >Rượu vang đỏ</a
+              >
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="#">Rượu trắng</a>
+              <a class="drink-navbar__link nav-link" href="products.html"
+                >Rượu vang trắng</a
+              >
             </li>
             <li class="drink-navbar__item nav-item">
               <a class="drink-navbar__link nav-link" href="#">Champagne</a>
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="#">Thông tin</a>
+              <a class="drink-navbar__link nav-link" href="introduce.html"
+                >Thông tin</a
+              >
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="#">Blog</a>
+              <a class="drink-navbar__link nav-link" href="blogs.html">Blog</a>
             </li>
             <li class="drink-navbar__item nav-item">
               <a class="drink-navbar__link nav-link" href="#">Liên hệ</a>
@@ -155,14 +162,14 @@
   <body>
     <div class="drink-body">
       <div class="drink-decoration">
-        <img src="src/img/thumbs/grape-purple.jpg" alt="grape" />
+        <img src="./img/thumbs/grape-purple.jpg" alt="grape" />
       </div>
 
       <section class="drink-info-section container">
         <div class="drink-info-main">
           <h2 class="drink-title">
             Giới thiệu
-            <img src="src/img/thumbs/title-dark.png" alt="title dark" />
+            <img src="./img/thumbs/title-dark.png" alt="title dark" />
           </h2>
           <p class="drink-desc">
             Some quick example text to build on the card title and make up the
@@ -173,27 +180,27 @@
             and make up the bulk of the card's content.
           </p>
           <div class="drink-btn">
-            <a href="#">Xem thêm</a>
+            <a href="./introduce.html">Xem thêm</a>
           </div>
         </div>
       </section>
 
       <section class="drink-best-section container">
         <div class="drink-best-main">
-          <img src="src/img/thumbs/grape-green.jpg" alt="green grape" />
+          <img src="./img/thumbs/grape-green.jpg" alt="green grape" />
           <div class="drink-best container">
             <div class="drink-best__item product-item row">
               <div class="product-thumbnail col-12 col-md-7">
                 <div class="product-tag product-tag--sale">
                   <span>Sale</span>
                 </div>
-                <img src="src/img/products/1.jpg" alt="product" />
+                <img src="./img/products/1.jpg" alt="product" />
               </div>
               <div class="product-info col-12 col-md-5">
                 <a class="product-title product-title--left" href="#">
                   Rượu nho năm 1987
                   <img
-                    src="src/img/thumbs/titleleft-dark.png"
+                    src="./img/thumbs/titleleft-dark.png"
                     alt="title left dark"
                   />
                 </a>
@@ -234,7 +241,7 @@
         <div class="drink-new-main">
           <h2 class="drink-title">
             Sản phẩm mới
-            <img src="src/img/thumbs/title-dark.png" alt="title dark" />
+            <img src="./img/thumbs/title-dark.png" alt="title dark" />
           </h2>
           <div
             id="drink-new__carousel"
@@ -251,7 +258,7 @@
                       <span>Sale</span>
                     </div>
                     <img
-                      src="src/img/products/2.jpg"
+                      src="./img/products/2.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -272,7 +279,7 @@
                       <span>Mới</span>
                     </div>
                     <img
-                      src="src/img/products/3.jpg"
+                      src="./img/products/3.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -293,7 +300,7 @@
                       <span>hot</span>
                     </div>
                     <img
-                      src="src/img/products/4.jpg"
+                      src="./img/products/4.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -309,7 +316,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/5.jpg"
+                      src="./img/products/5.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -329,7 +336,7 @@
                 <div class="row">
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/6.jpg"
+                      src="./img/products/6.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -345,7 +352,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/7.jpg"
+                      src="./img/products/7.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -361,7 +368,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/8.jpg"
+                      src="./img/products/8.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -377,7 +384,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/9.jpg"
+                      src="./img/products/9.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -427,30 +434,30 @@
         <div class="drink-wallpaper">
           <div class="wallpaper__row">
             <div class="wallpaper-row__item">
-              <img src="src/img/list/1.jpg" alt="drink image" />
+              <img src="./img/list/1.jpg" alt="drink image" />
             </div>
             <div class="wallpaper-row__item">
-              <img src="src/img/list/2.jpg" alt="drink image" />
+              <img src="./img/list/2.jpg" alt="drink image" />
             </div>
             <div class="wallpaper-row__item">
-              <img src="src/img/list/3.jpg" alt="drink image" />
+              <img src="./img/list/3.jpg" alt="drink image" />
             </div>
             <div class="wallpaper-row__item">
-              <img src="src/img/list/4.jpg" alt="drink image" />
+              <img src="./img/list/4.jpg" alt="drink image" />
             </div>
           </div>
           <div class="wallpaper__row">
             <div class="wallpaper-row__item">
-              <img src="src/img/list/4.jpg" alt="drink image" />
+              <img src="./img/list/4.jpg" alt="drink image" />
             </div>
             <div class="wallpaper-row__item">
-              <img src="src/img/list/3.jpg" alt="drink image" />
+              <img src="./img/list/3.jpg" alt="drink image" />
             </div>
             <div class="wallpaper-row__item">
-              <img src="src/img/list/2.jpg" alt="drink image" />
+              <img src="./img/list/2.jpg" alt="drink image" />
             </div>
             <div class="wallpaper-row__item">
-              <img src="src/img/list/1.jpg" alt="drink image" />
+              <img src="./img/list/1.jpg" alt="drink image" />
             </div>
           </div>
         </div>
@@ -460,7 +467,7 @@
         <div class="drink-new-main">
           <h2 class="drink-title">
             Sản phẩm bán chạy
-            <img src="src/img/thumbs/title-dark.png" alt="title dark" />
+            <img src="./img/thumbs/title-dark.png" alt="title dark" />
           </h2>
           <div
             id="drink-good__carousel"
@@ -472,7 +479,7 @@
                 <div class="row">
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/2.jpg"
+                      src="./img/products/2.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -488,7 +495,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/3.jpg"
+                      src="./img/products/3.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -504,7 +511,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/4.jpg"
+                      src="./img/products/4.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -520,7 +527,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/5.jpg"
+                      src="./img/products/5.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -540,7 +547,7 @@
                 <div class="row">
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/6.jpg"
+                      src="./img/products/6.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -556,7 +563,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/7.jpg"
+                      src="./img/products/7.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -572,7 +579,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/8.jpg"
+                      src="./img/products/8.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -588,7 +595,7 @@
                   </div>
                   <div class="product-thumbnail col-12 col-md-3">
                     <img
-                      src="src/img/products/9.jpg"
+                      src="./img/products/9.jpg"
                       alt="product"
                       class="d-block w-100"
                     />
@@ -633,6 +640,73 @@
           </div>
         </div>
       </section>
+
+      <section class="drink-news-section container">
+        <div class="drink-news-main row">
+          <div class="drink-news__blog col-12 col-md-8">
+            <h2 class="drink-title">
+              Tin tức & blog
+              <img src="./img/thumbs/title-dark.png" alt="title dark" />
+            </h2>
+            <div class="drink-blogs row">
+              <div class="drink-blogs__item col-12 col-md-6">
+                <div class="blogs-item__thumbs">
+                  <img src="./img/list/2.jpg" alt="wine" />
+                </div>
+                <a class="blogs-item__title">Vang thăng long classic</a>
+                <p class="blogs-item__info">
+                  Đăng bởi Giangle | 30/06/2023 | 60 bình luận
+                </p>
+                <p class="blogs-item__desc">
+                  Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men
+                  tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn.
+                  Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men
+                  tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn.
+                </p>
+                <a href="#" class="blogs-item__btn">Read more</a>
+              </div>
+              <div class="drink-blogs__item col-12 col-md-6">
+                <div class="blogs-item__thumbs">
+                  <img src="./img/list/2.jpg" alt="wine" />
+                </div>
+                <a class="blogs-item__title">Vang thăng long classic</a>
+                <p class="blogs-item__info">
+                  Đăng bởi Giangle | 30/06/2023 | 60 bình luận
+                </p>
+                <p class="blogs-item__desc">
+                  Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men
+                  tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn.
+                  Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men
+                  tự nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn.
+                </p>
+                <a href="#" class="blogs-item__btn">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="drink-news__feedback col-12 col-md-4">
+            <h2 class="drink-title">
+              Khách hàng
+              <img src="./img/thumbs/title-dark.png" alt="title dark" />
+            </h2>
+            <div class="drink-feedback">
+              <div class="drink-feedback__icon">
+                <img src="./img/icon/message.svg" alt="message icon" />
+              </div>
+              <p class="drink-feedback__desc">
+                Vang nổ Thăng Long có hương vị đặc trưng của sản phẩm lên men tự
+                nhiên từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn. Vang nổ
+                Thăng Long có hương vị đặc trưng của sản phẩm lên men tự nhiên
+                từ hoa quả với độ rượu nhẹ, bọt ga đầy trắng mịn.
+              </p>
+              <div class="drink-feedback__avatar">
+                <img src="./img/thumbs/avatar.jpg" alt="avatar" />
+                <p class="drink-avatar__name">GiangLT</p>
+                <p class="drink-avatar__job">Graphic design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
   <footer id="drink-footer">
@@ -672,23 +746,20 @@
           <h2 class="footer-title">Liên hệ</h2>
           <ul class="footer-list">
             <li class="footer-list__item">
-              <img
-                src="src/img/icon/location-dot-solid.svg"
-                alt="locate icon"
-              />
+              <img src="./img/icon/location-dot-solid.svg" alt="locate icon" />
               Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn P.Cống Vị, Q.Ba Đình,
               Hà Nội
             </li>
             <li class="footer-list__item">
-              <img src="src/img/icon/phone-solid.svg" alt="locate icon" />
+              <img src="./img/icon/phone-solid.svg" alt="locate icon" />
               (04) 6674 2332 -
-              <img src="src/img/icon/phone-solid.svg" alt="locate icon" /> (04)
+              <img src="./img/icon/phone-solid.svg" alt="locate icon" /> (04)
               3786 8904
             </li>
             <li class="footer-list__item">
-              <img src="src/img/icon/phone-solid.svg" alt="locate icon" />
+              <img src="./img/icon/phone-solid.svg" alt="locate icon" />
               (08) 6680 9686
-              <img src="src/img/icon/envelope-solid.svg" alt="locate icon" />
+              <img src="./img/icon/envelope-solid.svg" alt="locate icon" />
               Support@bizweb.vn
             </li>
           </ul>

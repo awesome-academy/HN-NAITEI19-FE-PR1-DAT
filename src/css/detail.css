@@ -1,0 +1,257 @@
+/*===============================================================
+Product
+===============================================================*/
+.drink-detail {
+  .drink-detail__images {
+    border: 1px solid #9ba6a5;
+    padding: 0;
+
+    .detail-images__list {
+      border-right: 1px solid #9ba6a5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        height: 120px;
+        margin: 0 10px;
+        padding: 10px 0;
+        width: auto;
+      }
+
+      & img:not(:last-child) {
+        border-bottom: 1px solid #9ba6a5;
+      }
+    }
+
+    .detail-images__main {
+      padding: 0;
+
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .drink-detail__order-info {
+    padding-left: 50px;
+
+    .product-info {
+      .drink-rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        border-top: 1px solid #e7eaf6;
+        border-bottom: 1px solid #e7eaf6;
+        padding: 10px 0;
+
+        .drink-rating__stars {
+          display: flex;
+          align-items: center;
+          margin-right: 2px;
+          & img {
+            height: 15px;
+            width: 15px;
+            margin-right: 3px;
+          }
+        }
+      }
+
+      .drink-product-form {
+        margin-top: 20px;
+
+        & form {
+          .field-label {
+            color: #9ba6a5;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-check {
+  position: relative;
+  padding-left: 35px;
+  margin-left: 2px;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  & input {
+    position: absolute !important;
+    left: -10px;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 20px;
+    width: 40px;
+    margin: 0;
+    z-index: 1;
+  }
+
+  .radio-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  .radio-custom--yellow {
+    background-color: #d69f1e;
+  }
+
+  .radio-custom--black {
+    background-color: #000;
+  }
+
+  .radio-custom--red {
+    background-color: #d71313;
+  }
+
+  .radio-custom:after {
+    content: "";
+    position: absolute;
+    display: none;
+    background: transparent;
+    height: 31px;
+    width: 31px;
+    top: -3px;
+    left: -3px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  }
+}
+
+.form-check input:checked ~ .radio-custom:after,
+.form-check:hover .radio-custom:after {
+  display: block;
+}
+
+.form-group {
+  .custom-select,
+  .custom-number-input {
+    display: block;
+    max-width: 30%;
+  }
+
+  .custom-select:focus,
+  .custom-number-input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .field-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    .custom-number-input {
+      margin: 0 !important;
+      margin-right: 10px !important;
+    }
+
+    .drink-btn {
+      height: 38px;
+      margin: 0;
+    }
+  }
+}
+
+.drink-product-desc {
+  margin-top: 10px;
+
+  .product-desc__title {
+    color: #9ba6a5;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .product-desc__content {
+    color: #9ba6a5;
+    font-size: 14px;
+  }
+}
+
+/*===============================================================
+Navigation
+===============================================================*/
+.drink-detail-body {
+  .drink-product-info {
+    margin-top: 100px;
+
+    .product-info__nav {
+      .nav-tabs {
+        border: none;
+
+        .nav-link {
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #5f6769;
+          font-weight: 600;
+        }
+
+        .nav-link:hover {
+          box-shadow: none;
+          outline: none;
+          border: none;
+          background-color: #d69f1e;
+          color: #fff;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+        }
+
+        .nav-link.active {
+          background-color: #d69f1e;
+          color: #fff;
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+          border: none;
+        }
+      }
+
+      .tab-content {
+        margin-top: 20px;
+
+        .tab-pane {
+          color: #5f6769;
+        }
+      }
+    }
+
+    .product-info__thumb {
+      padding-left: 80px;
+
+      & img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}

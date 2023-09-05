@@ -1,0 +1,29 @@
+/*===============================================================
+Introduction
+===============================================================*/
+.drink-introduce-body {
+  margin-bottom: -50px;
+
+  .drink-introduce {
+    .drink-introduce__thumb {
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .drink-introduce__desc {
+      .drink-title {
+        letter-spacing: 5px;
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .product-info {
+    .product-title:hover {
+      color: #000;
+    }
+  }
+}
