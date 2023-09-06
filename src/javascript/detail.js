@@ -41,8 +41,13 @@ const renderProduct = async () => {
     const currentCart = localStorage.getItem("currentCart");
     if (currentCart) {
       const cart = JSON.parse(currentCart);
-      console.log("🚀 ~ file: detail.js:44 ~ renderProduct ~ cart:", cart);
-      cart.push(addProduct);
+      const oldProductIndex = cart.findIndex(
+        (item) => item.productId === addProduct.productId
+      );
+      if (oldProductIndex > -1) {
+        cart[oldProductIndex].quantity += addProduct.quantity;
+        cart[oldProductIndex].total += addProduct.total;
+      } else cart.push(addProduct);
       localStorage.setItem("currentCart", JSON.stringify(cart));
     } else {
       const cart = [addProduct];
