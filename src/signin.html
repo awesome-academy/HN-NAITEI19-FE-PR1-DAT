@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
     <title>Drink</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -77,10 +78,10 @@
               >
             </li>
             <li class="drink-banner__item nav-item">
-              <a class="drink-banner__link nav-link" href="signin.html">Đăng nhập</a>
+              <a class="drink-banner__link nav-link" href="#">Đăng nhập</a>
             </li>
             <li class="drink-banner__item nav-item">
-              <a class="drink-banner__link nav-link" href="signup.html">Đăng ký</a>
+              <a class="drink-banner__link nav-link" href="#">Đăng ký</a>
             </li>
           </ul>
           <form class="drink-banner__form form-inline my-2 my-lg-0">
@@ -150,7 +151,9 @@
               <a class="drink-navbar__link nav-link" href="blogs.html">Blog</a>
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="contact.html">Liên hệ</a>
+              <a class="drink-navbar__link nav-link" href="contact.html"
+                >Liên hệ</a
+              >
             </li>
           </ul>
         </div>
@@ -158,10 +161,71 @@
     </div>
   </header>
   <body>
-    <div class="drink-body drink-done container">
-      <h2>Đặt hàng thành công</h2>
-      <div class="drink-btn">
-        <a href="index.html">Quay lại trang chủ</a>
+    <div class="drink-body drink-auth container">
+      <div class="drink-breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Đăng nhập
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="drink-auth__header">
+        <div class="product-info">
+          <p class="product-title product-title--left">
+            Đăng nhập
+            <img src="./img/thumbs/titleleft-dark.png" alt="title left dark" />
+          </p>
+        </div>
+        <div class="drink-btn">
+          <a href="signup.html">Đăng ký</a>
+        </div>
+      </div>
+      <div class="drink-auth__form container">
+        <form>
+          <div class="form-group">
+            <h2 class="form-title">Khách hàng đăng nhập</h2>
+            <p class="form-noti">
+              Nếu bạn đã có một tài khoản, vui lòng đăng nhập
+            </p>
+          </div>
+          <div class="form-group row">
+            <label for="authEmail" class="col-sm-2">Email*</label>
+            <div class="col-sm-10">
+              <input
+                type="email"
+                class="form-control"
+                id="authEmail"
+                aria-describedby="authEmail"
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="authPassword" class="col-sm-2">Password*</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="authPassword" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="form-check col-sm-10">
+              <input type="checkbox" class="form-check-input" id="authForgot" />
+              <label class="form-check-label" for="authForgot"
+                >Quên mật khẩu</label
+              >
+            </div>
+          </div>
+          <div class="row" style="margin-bottom: 10px">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+              <div class="drink-btn">
+                <a href="index.html">Đăng nhập</a>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </body>

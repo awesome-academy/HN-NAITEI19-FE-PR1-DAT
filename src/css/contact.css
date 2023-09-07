@@ -1,0 +1,37 @@
+/*===============================================================
+Contact
+===============================================================*/
+#map {
+  height: 400px;
+}
+
+.drink-contact {
+  .drink-contact__form {
+    .contact-form__form {
+      margin-top: 50px;
+      color: #9ba6a5;
+    }
+  }
+  .drink-contact__info {
+    .contact-media {
+      margin-top: 20px;
+      .contact-media__title {
+        color: #9ba6a5;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .contact-media__icon {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+
+        & img {
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <title>Drink</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -35,6 +36,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./javascript/contact.js"></script>
   </head>
   <header id="drink-header" class="container-fluid">
     <div class="drink-banner drink-banner--no-bg">
@@ -77,10 +80,10 @@
               >
             </li>
             <li class="drink-banner__item nav-item">
-              <a class="drink-banner__link nav-link" href="signin.html">Đăng nhập</a>
+              <a class="drink-banner__link nav-link" href="#">Đăng nhập</a>
             </li>
             <li class="drink-banner__item nav-item">
-              <a class="drink-banner__link nav-link" href="signup.html">Đăng ký</a>
+              <a class="drink-banner__link nav-link" href="#">Đăng ký</a>
             </li>
           </ul>
           <form class="drink-banner__form form-inline my-2 my-lg-0">
@@ -150,7 +153,9 @@
               <a class="drink-navbar__link nav-link" href="blogs.html">Blog</a>
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="contact.html">Liên hệ</a>
+              <a class="drink-navbar__link nav-link" href="contact.html"
+                >Liên hệ</a
+              >
             </li>
           </ul>
         </div>
@@ -158,10 +163,116 @@
     </div>
   </header>
   <body>
-    <div class="drink-body drink-done container">
-      <h2>Đặt hàng thành công</h2>
-      <div class="drink-btn">
-        <a href="index.html">Quay lại trang chủ</a>
+    <div class="drink-body drink-auth container">
+      <div class="drink-breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="drink-auth__header">
+        <div class="product-info">
+          <p class="product-title product-title--left">
+            Liên hệ
+            <img src="./img/thumbs/titleleft-dark.png" alt="title left dark" />
+          </p>
+        </div>
+      </div>
+      <div class="drink-contact row">
+        <div class="drink-contact__form col-12 col-md-9">
+          <div class="contact-form__map">
+            <div id="map"></div>
+          </div>
+          <div class="contact-form__form">
+            <form>
+              <div class="form-group row">
+                <label for="contactName" class="col-sm-2">Your Name</label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    aria-describedby="contactName"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="contactEmail" class="col-sm-2">Your Email</label>
+                <div class="col-sm-10">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    aria-describedby="contactEmail"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="contactSubject" class="col-sm-2">Subject</label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactSubject"
+                    aria-describedby="contactSubject"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="contactMessage" class="col-sm-2"
+                  >Your Message</label
+                >
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="5"> </textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                  <div class="drink-btn">
+                    <a href="#">Gửi</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="drink-contact__info col-12 col-md-3">
+          <div class="contact-info__logo">
+            <img src="./img/thumbs/logo-white.jpg" alt="logo" />
+          </div>
+          <div class="contact-info__list">
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <img
+                  src="./img/icon/location-dot-solid.svg"
+                  alt="locate icon"
+                />
+                Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn P.Cống Vị, Q.Ba Đình,
+                Hà Nội
+              </li>
+              <li class="footer-list__item">
+                <img src="./img/icon/phone-solid.svg" alt="locate icon" /> (04)
+                3786 8904
+              </li>
+              <li class="footer-list__item">
+                <img src="./img/icon/envelope-solid.svg" alt="locate icon" />
+                Support@bizweb.vn
+              </li>
+            </ul>
+            <div class="contact-media">
+              <h2 class="contact-media__title">Follow us</h2>
+              <div class="contact-media__icon">
+                <img src="./img/icon/facebook.svg" alt="facebook" />
+                <img src="./img/icon/at-sign.svg" alt="mail" />
+                <img src="./img/icon/youtube.svg" alt="youtube" />
+                <img src="./img/icon/twitter.svg" alt="twitter" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
@@ -232,4 +343,8 @@
       </div>
     </div>
   </footer>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+  ></script>
 </html>

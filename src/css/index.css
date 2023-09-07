@@ -497,27 +497,7 @@ Footer
           font-weight: 600;
           margin-bottom: 10px;
         }
-        .footer-list {
-          text-transform: uppercase;
-          font-size: 12px;
-          .footer-list__item {
-            color: #9ba6a5;
-            margin-top: 5px;
-            & a {
-              text-decoration: none;
-              color: #9ba6a5;
-            }
 
-            & a:hover {
-              color: #5f6769;
-            }
-
-            & img {
-              width: 10px;
-              height: auto;
-            }
-          }
-        }
         .footer-desc {
           margin-top: -5px;
           font-size: 14px;
@@ -537,6 +517,28 @@ Footer
         font-size: 14px;
         color: #9ba6a5;
       }
+    }
+  }
+}
+
+.footer-list {
+  text-transform: uppercase;
+  font-size: 12px;
+  .footer-list__item {
+    color: #9ba6a5;
+    margin-top: 5px;
+    & a {
+      text-decoration: none;
+      color: #9ba6a5;
+    }
+
+    & a:hover {
+      color: #5f6769;
+    }
+
+    & img {
+      width: 10px;
+      height: auto;
     }
   }
 }

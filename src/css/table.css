@@ -41,3 +41,42 @@ Cart
     }
   }
 }
+
+.drink-orders {
+  .drink-orders__list {
+    border: 1px solid #dee2e6;
+    background-color: #fafafa;
+    padding: 30px;
+
+    .orders-list__title {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .orders-list__filter {
+      color: #9ba6a5;
+
+      & a {
+        color: #9ba6a5;
+      }
+
+      & a:hover {
+        color: #9ba6a5;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .drink-cart__table {
+    background-color: #fff;
+
+    .drink-table__detail {
+      text-transform: none;
+      & span {
+        font-weight: 500;
+        color: #9ba6a5;
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -107,7 +107,8 @@ Products
                 color: #9ba6a5;
               }
 
-              & a:hover, & a:focus {
+              & a:hover,
+              & a:focus {
                 background-color: transparent;
                 box-shadow: none;
               }
@@ -123,5 +124,35 @@ Products
         }
       }
     }
+  }
+}
+
+.products-list__products {
+  margin-left: 15px;
+
+  .drink-detail {
+    border: none;
+    padding: 20px;
+
+    .drink-detail__images {
+      width: 100%;
+      height: auto;
+
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .drink-product-action {
+      .drink-btn {
+        margin: 0;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .drink-detail:not(:last-child) {
+    border-bottom: 1px solid #cecece;
   }
 }
