@@ -1,0 +1,41 @@
+/*===============================================================
+Auth
+===============================================================*/
+.drink-auth {
+  .drink-auth__header {
+    display: flex;
+    justify-content: space-between;
+
+    .product-title:hover {
+      color: #000;
+    }
+
+    .drink-btn {
+      margin: 0;
+      height: 40px;
+      width: 110px;
+      font-size: 20px;
+    }
+  }
+
+  .drink-auth__form {
+    border: 1px solid #cecece;
+    padding: 30px 50px;
+
+    .form-title {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+
+    .form-noti {
+      font-size: 14px;
+    }
+
+    .form-check {
+      padding-left: 35px;
+    }
+  }
+}

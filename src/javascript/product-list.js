@@ -24,7 +24,7 @@ const renderProducts = async () => {
   const responseAll = await fetch(fetchUrl);
   const productsAll = await responseAll.json();
 
-  const paginateSize = Math.ceil(productsAll.length / 9);
+  const paginateSize = Math.ceil(productsAll.length / 4);
 
   const prevNode = document.createElement("li");
   prevNode.classList.add("page-item");
@@ -54,25 +54,54 @@ const renderProducts = async () => {
 
   const fetchUrlLimited =
     category !== "all"
-      ? `http://localhost:3000/products?category=${category}&_page=${currentPage}&_limit=9`
-      : `http://localhost:3000/products?_page=${currentPage}&_limit=9`;
+      ? `http://localhost:3000/products?category=${category}&_page=${currentPage}&_limit=4`
+      : `http://localhost:3000/products?_page=${currentPage}&_limit=4`;
   const response = await fetch(fetchUrlLimited);
   const products = await response.json();
 
   products.forEach((product) => {
     const productNode = document.createElement("div");
     productNode.id = `productID-${product.id}`;
-    productNode.classList.add("product-thumbnail");
+    productNode.classList.add("drink-detail");
     productNode.classList.add("col-12");
-    productNode.classList.add("col-md-4");
-    productNode.innerHTML = `<img src="${product.images[0]}" alt="product"class="d-block w-100"/>
-    <div class="product-info product-info--center">
-    <a class="product-title product-title--new-size" href="detail.html">${product.name}</a>
-    <p class="product-price">${product.prices[0]} <span>đ</span></p>
-    <div class="drink-btn">
-    <a href="#" class="drink-btn__link" product-id="${product.id}">Add to cart</a>
+    productNode.classList.add("row");
+    productNode.innerHTML = `<div class="drink-detail__images col-4 row">
+    <img src="${product.images[0]}" alt="wine" />
+  </div>
+  <div class="drink-detail__order-info col-8">
+    <div class="product-info">
+      <a
+        class="product-title product-title--left"
+        href="detail.html"
+        id="product-name"
+      >
+        ${product.name}
+      </a>
+      <p class="product-price" id="product-price">
+        ${product.prices[0]} <span>đ</span>
+      </p>
+      <div class="drink-product-desc">
+        <div class="product-desc__content">
+          Một hợp chất có trong rượu vang gọi là resverato có khả
+          năng làm tăng tuổi thọ. Ngăn chặn mật độ oxy hóa của
+          protein béo
+        </div>
+      </div>
+      <div class="drink-product-action">
+        <div class="drink-btn">
+        <a href="#" class="drink-btn__link" product-id="${product.id}">Add to cart</a>
+        </div>
+        <div class="drink-action drink-action--like">
+          <img src="./img/icon/heart.svg" alt="heart" />
+          <p>Yêu thích</p>
+        </div>
+        <div class="drink-action drink-action--compare">
+          <img src="./img/icon/bar-chart.svg" alt="bar chart" />
+          <p>So sánh</p>
+        </div>
+      </div>
     </div>
-    </div>`;
+  </div>`;
     productNode.onclick = () => {
       localStorage.setItem("productId", product.id);
     };

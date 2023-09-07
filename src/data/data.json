@@ -11,7 +11,10 @@
         "./img/products/4.jpg",
         "./img/products/5.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 2,
@@ -24,7 +27,10 @@
         "./img/products/5.jpg",
         "./img/products/6.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 3,
@@ -37,7 +43,10 @@
         "./img/products/6.jpg",
         "./img/products/7.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 4,
@@ -50,7 +59,10 @@
         "./img/products/7.jpg",
         "./img/products/8.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 5,
@@ -63,7 +75,10 @@
         "./img/products/8.jpg",
         "./img/products/9.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 6,
@@ -76,7 +91,10 @@
         "./img/products/9.jpg",
         "./img/products/10.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 4,
@@ -89,7 +107,10 @@
         "./img/products/7.jpg",
         "./img/products/8.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 5,
@@ -102,7 +123,10 @@
         "./img/products/8.jpg",
         "./img/products/9.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 6,
@@ -115,7 +139,10 @@
         "./img/products/9.jpg",
         "./img/products/10.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 7,
@@ -128,7 +155,10 @@
         "./img/products/7.jpg",
         "./img/products/8.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 8,
@@ -141,7 +171,10 @@
         "./img/products/8.jpg",
         "./img/products/9.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     },
     {
       "id": 9,
@@ -154,7 +187,10 @@
         "./img/products/14.jpg",
         "./img/products/10.jpg"
       ],
-      "prices": ["370.000", "450.000"]
+      "prices": [
+        "370.000",
+        "450.000"
+      ]
     }
   ],
   "carts": [
@@ -291,6 +327,37 @@
         }
       ],
       "id": 5
+    },
+    {
+      "user": {
+        "id": "1",
+        "name": "Đạt",
+        "subname": "Nguyễn Tiến",
+        "company": "Sun",
+        "address": "1 Đại Cồ Việt",
+        "nation": "Việt Nam",
+        "zip": "10000",
+        "phone": "0123456789"
+      },
+      "cart": [
+        {
+          "productId": 1,
+          "name": "Rượu vang Pháp",
+          "image": "./img/products/1.jpg",
+          "price": 370000,
+          "quantity": 2,
+          "total": 740000
+        },
+        {
+          "productId": 2,
+          "name": "Rượu vang Mỹ",
+          "image": "./img/products/2.jpg",
+          "price": 370000,
+          "quantity": 2,
+          "total": 740000
+        }
+      ],
+      "id": 6
     }
   ]
 }

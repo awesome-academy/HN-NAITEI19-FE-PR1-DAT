@@ -19,6 +19,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/products.css" />
     <title>Drink</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -77,10 +78,14 @@
               >
             </li>
             <li class="drink-banner__item nav-item">
-              <a class="drink-banner__link nav-link" href="signin.html">Đăng nhập</a>
+              <a class="drink-banner__link nav-link" href="signin.html"
+                >Đăng nhập</a
+              >
             </li>
             <li class="drink-banner__item nav-item">
-              <a class="drink-banner__link nav-link" href="signup.html">Đăng ký</a>
+              <a class="drink-banner__link nav-link" href="signup.html"
+                >Đăng ký</a
+              >
             </li>
           </ul>
           <form class="drink-banner__form form-inline my-2 my-lg-0">
@@ -131,7 +136,7 @@
               >
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="products.html"
+              <a class="drink-navbar__link nav-link active" href="products.html"
                 >Rượu vang đỏ</a
               >
             </li>
@@ -150,7 +155,9 @@
               <a class="drink-navbar__link nav-link" href="blogs.html">Blog</a>
             </li>
             <li class="drink-navbar__item nav-item">
-              <a class="drink-navbar__link nav-link" href="contact.html">Liên hệ</a>
+              <a class="drink-navbar__link nav-link" href="contact.html"
+                >Liên hệ</a
+              >
             </li>
           </ul>
         </div>
@@ -158,10 +165,114 @@
     </div>
   </header>
   <body>
-    <div class="drink-body drink-done container">
-      <h2>Đặt hàng thành công</h2>
-      <div class="drink-btn">
-        <a href="index.html">Quay lại trang chủ</a>
+    <div class="drink-body drink-products-body container">
+      <div class="drink-breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item">Sản phẩm</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Rượu vang đỏ
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="drink-products-thumbnail">
+        <img src="./img/thumbs/product-page.jpg" alt="grape and wine" />
+      </div>
+      <div class="drink-products-main row">
+        <div class="drink-products__filter-bar col-12 col-md-3">
+          <div class="products-filter__item filter-item__category">
+            <div class="product-info">
+              <p class="product-title product-title--left">
+                Danh mục sản phẩm
+                <img
+                  src="./img/thumbs/titleleft-dark.png"
+                  alt="title left dark"
+                />
+              </p>
+            </div>
+            <div class="filter-category__items">
+              <ul class="category-items__list">
+                <li class="category-items__name active" data-custom-value="all">
+                  Tất cả
+                </li>
+              </ul>
+            </div>
+            <div class="filter-category__items">
+              <h2 class="category-items__title">Rượu ngoại</h2>
+              <ul class="category-items__list">
+                <li class="category-items__name" data-custom-value="chivas">
+                  Chivas
+                </li>
+                <li class="category-items__name" data-custom-value="whisky">
+                  Whisky
+                </li>
+                <li class="category-items__name" data-custom-value="vodka">
+                  Vodka
+                </li>
+              </ul>
+            </div>
+            <div class="filter-category__items">
+              <h2 class="category-items__title">Rượu vang</h2>
+              <ul class="category-items__list">
+                <li class="category-items__name" data-custom-value="france">
+                  Rượu vang Pháp
+                </li>
+                <li class="category-items__name" data-custom-value="usa">
+                  Rượu vang Mỹ
+                </li>
+                <li class="category-items__name" data-custom-value="italia">
+                  Rượu vang Ý
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="products-filter__item filter-item__compare">
+            <div class="product-info">
+              <p class="product-title product-title--left">
+                So sánh sản phẩm
+                <img
+                  src="./img/thumbs/titleleft-dark.png"
+                  alt="title left dark"
+                />
+              </p>
+            </div>
+            <p class="filter-item__desc">Bạn chưa có sản phẩm nào để so sánh</p>
+          </div>
+          <div class="products-filter__item filter-item__tag">
+            <div class="product-info">
+              <p class="product-title product-title--left">
+                Tag sản phẩm
+                <img
+                  src="./img/thumbs/titleleft-dark.png"
+                  alt="title left dark"
+                />
+              </p>
+            </div>
+          </div>
+          <div class="products-filter__item filter-item__thumb">
+            <img src="./img/thumbs/red-wine.jpg" alt="red wine" />
+          </div>
+        </div>
+        <div class="drink-products__list col-12 col-md-9">
+          <div class="products-list__control-bar">
+            <div class="control-bar__icon">
+              <a href="#">
+                <img src="./img/icon/grid.svg" alt="grid icon" />
+              </a>
+              <a href="products-list.html">
+                <img src="./img/icon/list-active.svg" alt="list icon" />
+              </a>
+            </div>
+            <nav aria-label="Page navigation" class="products-list__pagination">
+              <ul class="pagination" id="product-paginate__container"></ul>
+            </nav>
+          </div>
+          <div class="products-list__products row" id="products-list__products">
+            <div class="drink-detail col-12 row"></div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
@@ -232,4 +343,6 @@
       </div>
     </div>
   </footer>
+
+  <script src="./javascript/product-list.js"></script>
 </html>
